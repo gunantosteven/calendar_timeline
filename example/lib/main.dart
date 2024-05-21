@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   void _resetSelectedDate() {
-    _selectedDate = DateTime.now().add(const Duration(days: 2));
+    _selectedDate = DateTime.now();
   }
 
   @override
@@ -80,7 +80,7 @@ class _HomePageState extends State<HomePage> {
               padding: const EdgeInsets.only(left: 16),
               child: TextButton(
                 style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(Colors.teal[200]),
+                  backgroundColor: WidgetStateProperty.all(Colors.teal[200]),
                 ),
                 child: const Text(
                   'RESET',
